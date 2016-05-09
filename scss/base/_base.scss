@@ -1,0 +1,31 @@
+
+// ==========================================================================
+// Basic Stuff
+// ==========================================================================
+
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: $stack-open-sans;
+	background-color: $color-bg;
+	color: $color-text;
+	@extend %centered;
+}
+
+hr { 
+	margin-top: 3em; 
+	
+	&.pretty {
+	    margin: 25px auto 30px;
+	    padding: 0;
+	    max-width: 250px;
+	    border: 0;
+	    border-top: solid 3px $color-hover; /* red */
+	    text-align: center;
+	}
+}

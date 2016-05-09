@@ -1,0 +1,13 @@
+// ==========================================================================
+// Page Sections
+// ==========================================================================
+
+section#portfolio,
+section#contact,
+section#skill {
+	padding: 2em 0 0 0;
+}
+
+.section-title { 
+	color: $color-section; /* blue */ 
+}

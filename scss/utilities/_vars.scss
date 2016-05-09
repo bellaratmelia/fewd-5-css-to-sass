@@ -1,0 +1,36 @@
+// ==========================================================================
+// Variables Declaration
+// ==========================================================================
+
+// descriptive color vars
+$coolwhite 		: #ECF0F1;
+$pink			: #E74C3C;
+$lightblue		: #2980B9;
+$blue			: #3498DB;
+$brightred		: #d24d57;
+$darkgrey		: #555;
+$navy			: #2C3E50;
+$transparent	: transparent;
+
+// functional color vars
+$color-title		: $pink;
+$color-bg			: $coolwhite;
+$color-text			: $darkgrey;
+$color-hover		: $brightred;
+$color-section		: $lightblue;
+$color-nav			: $navy;
+$color-trans		: $transparent;
+$color-skill-bg		: $blue;
+
+
+// media queries
+$mq-desktop		: 'screen and (min-width: 1024px)';
+$mq-tablet		: 'screen and (min-width: 768px)';
+
+// fonts
+$stack-sans-serif	: Helvetica, Arial, sans-serif;
+$stack-open-sans	: 'Open Sans', $stack-sans-serif;
+
+// paddings & margins
+$basemargin			: 1.5rem;
+$page-item-padding	: 1rem 1.5rem;

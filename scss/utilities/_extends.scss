@@ -1,0 +1,18 @@
+// ==========================================================================
+// Extends
+// ==========================================================================
+
+// placeholder selectors
+%centered {
+	text-align: center;
+}
+
+%base-nav-style {
+	text-decoration: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 5px 1em;
+	color: $color-nav; /* navy */
+	transition: all .5s;	
+}

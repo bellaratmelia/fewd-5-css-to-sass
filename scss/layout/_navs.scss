@@ -1,0 +1,29 @@
+
+// ==========================================================================
+// Main Navigation
+// ==========================================================================
+
+
+.main-nav {
+	display: flex;
+	flex-direction: column;
+
+	a {
+		display: block;
+		padding: 0.5em;
+		background-color: white;
+
+		@extend %base-nav-style;
+
+		:hover {
+			color: $color-nav;
+		}
+
+		@include mq-styles(tablet) { background-color: $color-trans; }
+	}
+
+	@include mq-styles(tablet) {
+		@include flex-props($direction:row, $justify:center);
+	}
+
+}

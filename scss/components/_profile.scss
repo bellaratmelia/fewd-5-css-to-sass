@@ -1,0 +1,57 @@
+
+// ==========================================================================
+// Profile
+// ==========================================================================
+
+.student-name { 
+	color: $color-title; /* red */ 
+	padding: $page-item-padding; 
+
+	@include mq-styles(desktop) {
+		margin-right: auto;
+		padding: 0 1.5rem;
+	}
+}
+
+.intro {
+	font-weight: 300;
+	font-size: 1.1em;
+	order: 1;
+
+	padding: $page-item-padding;
+
+	@include mq-styles(tablet) {
+		text-align: left;
+		width: 60%;
+		order: 1;
+	}
+
+	@include mq-styles(desktop) { font-size: 1.5rem; }
+}
+
+.outro { 
+	margin: 0 auto; 
+	padding: $page-item-padding;
+
+	@include mq-styles(tablet) { width: 70%; }
+	@include mq-styles(desktop) { width: 50%; }
+
+}
+
+.photo { 
+	margin-top: 2rem; 
+	padding: $page-item-padding;
+
+	img {
+		max-width: 250px;
+		border-radius: 50%;
+		-webkit-border-radius: 50%;
+		border:1px solid silver;
+		box-shadow: 0 0 30px gray;
+	}
+
+	@include mq-styles(tablet) {
+		order: 2;
+		margin-top: 0;
+	}
+}

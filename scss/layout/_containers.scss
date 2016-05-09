@@ -1,0 +1,40 @@
+
+// ==========================================================================
+// Main Container a.k.a Wrapper
+// ==========================================================================
+
+.wrapper {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding-top: 1.25rem;
+
+	@include mq-styles(tablet) { padding-top: 2.5rem; }
+	@include mq-styles(desktop) { padding-top: 4rem; }
+
+}
+
+// ==========================================================================
+// Other Containers
+// ==========================================================================
+
+.container-flex {
+	&-about {
+		@include flex-props($direction:column);
+		padding-bottom: 2em;
+
+		@include mq-styles(tablet) {
+			@include flex-props($direction:row, $justify: space-between, $align: center);
+		}
+	}
+
+	&-nav {
+		@include mq-styles(tablet) {
+			@include flex-props($direction:column, $justify: space-between, $align: center);
+			padding-bottom: 2em;
+		}
+
+		@include mq-styles(desktop) {
+			@include flex-props($direction:row, $justify: space-between);
+		}
+	}
+}

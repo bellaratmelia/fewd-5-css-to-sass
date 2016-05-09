@@ -1,0 +1,204 @@
+body {
+  text-align: center; }
+
+.main-nav a, .footer-nav a, #back-to-top a {
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 5px 1em;
+  color: #2C3E50;
+  /* navy */
+  transition: all .5s; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  background-color: #ECF0F1;
+  color: #555; }
+
+hr {
+  margin-top: 3em; }
+  hr.pretty {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 3px #d24d57;
+    /* red */
+    text-align: center; }
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-top: 1.25rem; }
+  @media screen and (min-width: 768px) {
+    .wrapper {
+      padding-top: 2.5rem; } }
+  @media screen and (min-width: 1024px) {
+    .wrapper {
+      padding-top: 4rem; } }
+
+.container-flex-about {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2em; }
+  @media screen and (min-width: 768px) {
+    .container-flex-about {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; } }
+@media screen and (min-width: 768px) {
+  .container-flex-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2em; } }
+@media screen and (min-width: 1024px) {
+  .container-flex-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; } }
+
+.main-nav {
+  display: flex;
+  flex-direction: column; }
+  .main-nav a {
+    display: block;
+    padding: 0.5em;
+    background-color: white; }
+    .main-nav a :hover {
+      color: #2C3E50; }
+    @media screen and (min-width: 768px) {
+      .main-nav a {
+        background-color: transparent; } }
+  @media screen and (min-width: 768px) {
+    .main-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; } }
+
+section#portfolio,
+section#contact,
+section#skill {
+  padding: 2em 0 0 0; }
+
+.section-title {
+  color: #2980B9;
+  /* blue */ }
+
+footer {
+  min-height: 30px;
+  padding: 30px 0;
+  display: flex; }
+
+.footer-nav {
+  display: none; }
+  .footer-nav a :hover {
+    color: #2C3E50; }
+  @media screen and (min-width: 768px) {
+    .footer-nav a {
+      background-color: transparent; } }
+  @media screen and (min-width: 768px) {
+    .footer-nav {
+      display: inline-block; } }
+
+.footer-name {
+  color: #E74C3C;
+  /* red */
+  margin-right: auto;
+  padding: 5px 1.5rem; }
+  @media screen and (min-width: 768px) {
+    .footer-name {
+      padding: 0px 1.5rem; } }
+
+#back-to-top a {
+  display: inline-block; }
+  #back-to-top a :hover {
+    color: #2C3E50; }
+@media screen and (min-width: 768px) {
+  #back-to-top {
+    display: none; } }
+
+@media screen and (min-width: 768px) {
+  .portfolio-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; } }
+.portfolio-item {
+  padding: 0 1rem;
+  margin: 1.5rem 0; }
+  .portfolio-item img {
+    width: 100%; }
+  @media screen and (min-width: 768px) {
+    .portfolio-item {
+      width: 50%; } }
+  @media screen and (min-width: 1024px) {
+    .portfolio-item {
+      width: 33%; } }
+
+.student-name {
+  color: #E74C3C;
+  /* red */
+  padding: 1rem 1.5rem; }
+  @media screen and (min-width: 1024px) {
+    .student-name {
+      margin-right: auto;
+      padding: 0 1.5rem; } }
+
+.intro {
+  font-weight: 300;
+  font-size: 1.1em;
+  order: 1;
+  padding: 1rem 1.5rem; }
+  @media screen and (min-width: 768px) {
+    .intro {
+      text-align: left;
+      width: 60%;
+      order: 1; } }
+  @media screen and (min-width: 1024px) {
+    .intro {
+      font-size: 1.5rem; } }
+
+.outro {
+  margin: 0 auto;
+  padding: 1rem 1.5rem; }
+  @media screen and (min-width: 768px) {
+    .outro {
+      width: 70%; } }
+  @media screen and (min-width: 1024px) {
+    .outro {
+      width: 50%; } }
+
+.photo {
+  margin-top: 2rem;
+  padding: 1rem 1.5rem; }
+  .photo img {
+    max-width: 250px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 1px solid silver;
+    box-shadow: 0 0 30px gray; }
+  @media screen and (min-width: 768px) {
+    .photo {
+      order: 2;
+      margin-top: 0; } }
+
+ul.skills {
+  padding: 1rem; }
+  ul.skills li {
+    border-radius: 7px;
+    display: inline-block;
+    background: #3498DB;
+    color: white;
+    padding: 5px 10px;
+    margin: 2px; }
+
+/*# sourceMappingURL=application.css.map */
