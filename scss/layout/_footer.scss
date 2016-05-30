@@ -17,10 +17,12 @@ footer {
 		:hover {
 			color: $color-nav;
 		}
-
+	
+		// media query mixin
 		@include mq-styles(tablet) { background-color: $color-trans; }
 	}
-	
+		
+	// media query mixin
 	@include mq-styles(tablet) { display: inline-block; }
 }
 
@@ -28,7 +30,8 @@ footer {
 	color: $color-title; /* red */ 
 	margin-right: auto;
 	padding: 5px 1.5rem;
-
+	
+	// media query mixin
 	@include mq-styles(tablet) { padding: 0px 1.5rem; }
 }
 
@@ -42,7 +45,8 @@ footer {
 			color: $color-nav;
 		}
 	}
-
+	
+	// media query mixin
 	@include mq-styles(tablet) { display: none; }
 
 }

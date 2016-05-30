@@ -24,8 +24,9 @@ $color-skill-bg		: $blue;
 
 
 // media queries
-$mq-desktop		: 'screen and (min-width: 1024px)';
-$mq-tablet		: 'screen and (min-width: 768px)';
+$mq-desktop		: 'only screen and (min-width: 1024px)';
+$mq-tablet		: 'only screen and (min-width: 768px)';
+$mq-mobile		: 'only screen and (max-width: 425px)';
 
 // fonts
 $stack-sans-serif	: Helvetica, Arial, sans-serif;

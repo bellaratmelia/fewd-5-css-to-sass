@@ -5,8 +5,11 @@
 .portfolio {
 
 	&-container {
+
+		// media query mixin
 		@include mq-styles(tablet) {
-			@include flex-props($direction:row, $justify: space-around);
+			// flex properties mixin
+			@include flex-props($direction:row, $justify: space-around, $wrap: wrap);
 		}
 	}
 
@@ -17,7 +20,8 @@
 		img {
 			width: 100%;
 		}
-
+	
+		// media query mixin
 		@include mq-styles(tablet) { width: 50%; }
 		@include mq-styles(desktop) { width: 33%; }
 	}

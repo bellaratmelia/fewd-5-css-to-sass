@@ -7,7 +7,8 @@
 	max-width: 1024px;
 	margin: 0 auto;
 	padding-top: 1.25rem;
-
+	
+	// media query mixin
 	@include mq-styles(tablet) { padding-top: 2.5rem; }
 	@include mq-styles(desktop) { padding-top: 4rem; }
 
@@ -21,13 +22,16 @@
 	&-about {
 		@include flex-props($direction:column);
 		padding-bottom: 2em;
-
+	
+		// media query mixin
 		@include mq-styles(tablet) {
 			@include flex-props($direction:row, $justify: space-between, $align: center);
 		}
 	}
 
 	&-nav {
+
+		// media query mixin
 		@include mq-styles(tablet) {
 			@include flex-props($direction:column, $justify: space-between, $align: center);
 			padding-bottom: 2em;

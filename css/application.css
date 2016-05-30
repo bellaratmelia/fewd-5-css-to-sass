@@ -1,14 +1,13 @@
-body {
+body, hr.pretty {
   text-align: center; }
 
-.main-nav a, .footer-nav a, #back-to-top a {
+#main-nav li a, .toggle, .footer-nav a, #back-to-top a {
   text-decoration: none;
   cursor: pointer;
   text-transform: uppercase;
   font-weight: bold;
   margin: 5px 1em;
   color: #2C3E50;
-  /* navy */
   transition: all .5s; }
 
 * {
@@ -30,17 +29,16 @@ hr {
     max-width: 250px;
     border: 0;
     border-top: solid 3px #d24d57;
-    /* red */
-    text-align: center; }
+    /* red */ }
 
 .wrapper {
   max-width: 1024px;
   margin: 0 auto;
   padding-top: 1.25rem; }
-  @media screen and (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .wrapper {
       padding-top: 2.5rem; } }
-  @media screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1024px) {
     .wrapper {
       padding-top: 4rem; } }
 
@@ -48,42 +46,60 @@ hr {
   display: flex;
   flex-direction: column;
   padding-bottom: 2em; }
-  @media screen and (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .container-flex-about {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center; } }
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .container-flex-nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 2em; } }
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .container-flex-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between; } }
 
-.main-nav {
-  display: flex;
-  flex-direction: column; }
-  .main-nav a {
+#main-nav {
+  display: none; }
+  #main-nav ul {
+    list-style: none;
+    padding: 0; }
+  #main-nav li a {
     display: block;
     padding: 0.5em;
     background-color: white; }
-    .main-nav a :hover {
+    #main-nav li a:hover, #main-nav li a:focus {
       color: #2C3E50; }
-    @media screen and (min-width: 768px) {
-      .main-nav a {
+    @media only screen and (min-width: 768px) {
+      #main-nav li a {
         background-color: transparent; } }
-  @media screen and (min-width: 768px) {
-    .main-nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: center; } }
+  @media only screen and (min-width: 768px) {
+    #main-nav li {
+      float: left; } }
+  @media only screen and (min-width: 768px) {
+    #main-nav {
+      display: inline-block; } }
+
+.toggle {
+  display: block;
+  padding: 0.5em;
+  background-color: #ECF0F1; }
+  @media only screen and (min-width: 768px) {
+    .toggle {
+      display: none; } }
+
+#toggle-menu {
+  display: none; }
+
+[id^=toggle-menu]:checked + #main-nav {
+  display: block;
+  transition: all 0.5s ease-in; }
 
 section#portfolio,
 section#contact,
@@ -103,10 +119,10 @@ footer {
   display: none; }
   .footer-nav a :hover {
     color: #2C3E50; }
-  @media screen and (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .footer-nav a {
       background-color: transparent; } }
-  @media screen and (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .footer-nav {
       display: inline-block; } }
 
@@ -115,7 +131,7 @@ footer {
   /* red */
   margin-right: auto;
   padding: 5px 1.5rem; }
-  @media screen and (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .footer-name {
       padding: 0px 1.5rem; } }
 
@@ -123,13 +139,14 @@ footer {
   display: inline-block; }
   #back-to-top a :hover {
     color: #2C3E50; }
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   #back-to-top {
     display: none; } }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .portfolio-container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around; } }
 .portfolio-item {
@@ -137,10 +154,10 @@ footer {
   margin: 1.5rem 0; }
   .portfolio-item img {
     width: 100%; }
-  @media screen and (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .portfolio-item {
       width: 50%; } }
-  @media screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1024px) {
     .portfolio-item {
       width: 33%; } }
 
@@ -148,7 +165,7 @@ footer {
   color: #E74C3C;
   /* red */
   padding: 1rem 1.5rem; }
-  @media screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1024px) {
     .student-name {
       margin-right: auto;
       padding: 0 1.5rem; } }
@@ -158,22 +175,22 @@ footer {
   font-size: 1.1em;
   order: 1;
   padding: 1rem 1.5rem; }
-  @media screen and (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .intro {
       text-align: left;
       width: 60%;
       order: 1; } }
-  @media screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1024px) {
     .intro {
       font-size: 1.5rem; } }
 
 .outro {
   margin: 0 auto;
   padding: 1rem 1.5rem; }
-  @media screen and (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .outro {
       width: 70%; } }
-  @media screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1024px) {
     .outro {
       width: 50%; } }
 
@@ -186,7 +203,7 @@ footer {
     -webkit-border-radius: 50%;
     border: 1px solid silver;
     box-shadow: 0 0 30px gray; }
-  @media screen and (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .photo {
       order: 2;
       margin-top: 0; } }

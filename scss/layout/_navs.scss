@@ -4,26 +4,63 @@
 // ==========================================================================
 
 
-.main-nav {
-	display: flex;
-	flex-direction: column;
+#main-nav {
 
-	a {
-		display: block;
-		padding: 0.5em;
-		background-color: white;
+	display: none;
 
-		@extend %base-nav-style;
-
-		:hover {
-			color: $color-nav;
-		}
-
-		@include mq-styles(tablet) { background-color: $color-trans; }
+	ul {
+		list-style: none;
+		padding: 0;
 	}
 
+	li {
+		a {
+			display: block;
+			padding: 0.5em;
+			background-color: white;
+
+			@extend %base-nav-style;
+
+			&:hover,
+			&:focus {
+				color: $color-nav;
+			}
+		
+			// media query mixin
+			@include mq-styles(tablet) { background-color: $color-trans; }
+		}
+
+		@include mq-styles(tablet) { float:left; }
+	}
+
+	
+	
+	// media query mixin
 	@include mq-styles(tablet) {
-		@include flex-props($direction:row, $justify:center);
+		display: inline-block;
 	}
 
 }
+
+.toggle {
+	display: block;
+	padding: 0.5em;
+	background-color: $color-bg;
+
+	@extend %base-nav-style;
+	@include mq-styles(tablet) { display: none; }
+}
+
+// hide the checkbox for toggling menu
+#toggle-menu {
+	display: none;
+}
+
+// the menu is hidden by default on mobile, and will only be shown when the checkbox is checked
+// menu has an id main-nav
+// check and uncheck the checkbox by clicking on .toggle
+
+[id^=toggle-menu]:checked + #main-nav {
+    display:block;
+    transition: all 0.5s ease-in;
+ }

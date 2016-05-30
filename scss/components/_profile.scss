@@ -7,6 +7,7 @@
 	color: $color-title; /* red */ 
 	padding: $page-item-padding; 
 
+	// media query mixin
 	@include mq-styles(desktop) {
 		margin-right: auto;
 		padding: 0 1.5rem;
@@ -19,7 +20,8 @@
 	order: 1;
 
 	padding: $page-item-padding;
-
+	
+	// media query mixin
 	@include mq-styles(tablet) {
 		text-align: left;
 		width: 60%;
@@ -32,7 +34,8 @@
 .outro { 
 	margin: 0 auto; 
 	padding: $page-item-padding;
-
+	
+	// media query mixin
 	@include mq-styles(tablet) { width: 70%; }
 	@include mq-styles(desktop) { width: 50%; }
 
@@ -49,7 +52,8 @@
 		border:1px solid silver;
 		box-shadow: 0 0 30px gray;
 	}
-
+	
+	// media query mixin
 	@include mq-styles(tablet) {
 		order: 2;
 		margin-top: 0;
