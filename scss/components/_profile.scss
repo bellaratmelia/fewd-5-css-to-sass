@@ -16,7 +16,7 @@
 
 .intro {
 	font-weight: 300;
-	font-size: 1.1em;
+	font-size: $base-font-size * 1.1;
 	order: 1;
 
 	padding: $page-item-padding;
@@ -28,7 +28,7 @@
 		order: 1;
 	}
 
-	@include mq-styles(desktop) { font-size: 1.5rem; }
+	@include mq-styles(desktop) { font-size: $base-font-size * 1.5; }
 }
 
 .outro { 
@@ -49,8 +49,8 @@
 		max-width: 250px;
 		border-radius: 50%;
 		-webkit-border-radius: 50%;
-		border:1px solid silver;
-		box-shadow: 0 0 30px gray;
+		border:1px solid $color-photo-border;
+		box-shadow: 0 0 30px $color-photo-shadow;
 	}
 	
 	// media query mixin

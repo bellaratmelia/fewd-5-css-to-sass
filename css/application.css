@@ -98,8 +98,7 @@ hr {
   display: none; }
 
 [id^=toggle-menu]:checked + #main-nav {
-  display: block;
-  transition: all 0.5s ease-in; }
+  display: block; }
 
 section#portfolio,
 section#contact,
@@ -182,7 +181,7 @@ footer {
       order: 1; } }
   @media only screen and (min-width: 1024px) {
     .intro {
-      font-size: 1.5rem; } }
+      font-size: 1.5em; } }
 
 .outro {
   margin: 0 auto;

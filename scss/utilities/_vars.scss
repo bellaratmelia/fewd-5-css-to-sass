@@ -3,6 +3,9 @@
 // ==========================================================================
 
 // descriptive color vars
+$white			: white;
+$silver			: silver;
+$gray			: gray;
 $coolwhite 		: #ECF0F1;
 $pink			: #E74C3C;
 $lightblue		: #2980B9;
@@ -21,6 +24,10 @@ $color-section		: $lightblue;
 $color-nav			: $navy;
 $color-trans		: $transparent;
 $color-skill-bg		: $blue;
+$color-skill		: $white;
+$color-photo-border	: $silver;
+$color-photo-shadow	: $gray;
+$color-mobile-nav-bg: $white;
 
 
 // media queries
@@ -31,6 +38,7 @@ $mq-mobile		: 'only screen and (max-width: 425px)';
 // fonts
 $stack-sans-serif	: Helvetica, Arial, sans-serif;
 $stack-open-sans	: 'Open Sans', $stack-sans-serif;
+$base-font-size		: 1em;
 
 // paddings & margins
 $basemargin			: 1.5rem;
